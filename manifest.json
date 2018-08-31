@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "joggl",
+  "version": "1.0",
+  "description": "track time in jira using toggl and tempo",
+  "icons": {
+	"128": "assets/images/joggl.png"
+  },
+  "content_scripts": [
+	{
+	  "matches": [
+		"*://*/*"
+	  ],
+	  "js": [
+		"src/jquery.js",
+		"src/joggl.js"
+	  ],
+	  "css": [
+		"src/style.css"
+	  ]
+	}
+  ],
+  "web_accessible_resources": [
+	"assets/images/joggl.png"
+  ],
+  "browser_action": {
+	"browser_style": true,
+	"default_icon": "assets/images/joggl.png",
+	"default_title": "joggl",
+	"default_popup": "src/index.html"
+  }
+}
+

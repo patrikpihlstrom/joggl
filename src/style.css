@@ -1,0 +1,10 @@
+.joggl-button {
+	margin-right: 10px;
+	max-width: 32px;
+	opacity: 0.8;
+}
+
+.joggl-button:hover {
+	opacity: 1.0;
+	cursor: pointer;
+}
