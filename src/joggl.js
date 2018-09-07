@@ -47,11 +47,15 @@ jQuery(document).ready(function ($) {
                     $(this).addClass('joggled');
                     $(this).prepend('<div class="ContextMenu__container joggl" id="' + id + '"><img src="' +
 						browser.extension.getURL("assets/images/joggl.png") + '" class="joggl-button"/></div><div id="'
-                        + id + '-popup' + '" class="popup">' +
+                        + id + '-popup' + '" class="popup" style="z-index: 1000">' +
+                        '<span class="close-popup" id="' + id + '-close">X</span>' +
                         '<input type="text" id="timeSpent" placeholder="Time Spent, e.g. 1h 30m"/>' +
                         '<input type="text" id="comment" placeholder="Comment"/>' +
                         '<button id="create-log-' + id + '">Create Worklog</button></div>');
                     document.getElementById(id).addEventListener('click', function (e) {
+                        $('.popup').each(function () {
+                            $(this).hide();
+                        });
                         var popup = $('#' + e.srcElement.parentElement.id + '-popup');
                         popup.show();
                     });
@@ -63,6 +67,9 @@ jQuery(document).ready(function ($) {
                             comment: popup.find('#comment')[0].value
                         };
                         createWorklog(id, data);
+                    });
+                    document.getElementById(id + '-close').addEventListener('click', function (e) {
+                        $(e.srcElement.parentElement).hide();
                     });
 				} catch (e) {
 			        console.log(e);

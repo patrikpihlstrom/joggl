@@ -23,4 +23,14 @@ table {
 	width: 256px;
 	height: 128px;
 	padding: 8px;
+	z-index: 1000;
+}
+
+.popup > .close-popup {
+	top: 0px;
+	float: right;
+}
+
+.popup > .close-popup:hover {
+    cursor: pointer;
 }
