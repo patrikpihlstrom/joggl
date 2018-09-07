@@ -8,3 +8,19 @@
 	opacity: 1.0;
 	cursor: pointer;
 }
+
+.input-container {
+	margin: 8px;
+}
+
+table {
+	margin: 8px;
+}
+
+.popup {
+	display: none;
+	background-color: #eff;
+	width: 256px;
+	height: 128px;
+	padding: 8px;
+}

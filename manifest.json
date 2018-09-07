@@ -28,6 +28,16 @@
 	"default_icon": "assets/images/joggl.png",
 	"default_title": "joggl",
 	"default_popup": "src/index.html"
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "<all_urls>"
+  ],
+  "applications": {
+    "gecko": {
+      "id": "patrik.pihlstrom@gmail.com"
+    }
   }
 }
 
