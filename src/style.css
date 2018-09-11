@@ -19,11 +19,15 @@ table {
 
 .popup {
 	display: none;
-	background-color: #eff;
+	background-color: #fff;
 	width: 256px;
 	height: 128px;
-	padding: 8px;
+	padding: 10px;
 	z-index: 1000;
+	border-radius: 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #aaa;
 }
 
 .popup > .close-popup {
@@ -33,4 +37,8 @@ table {
 
 .popup > .close-popup:hover {
     cursor: pointer;
+}
+
+.popup > input {
+	margin-bottom: 8px;
 }
