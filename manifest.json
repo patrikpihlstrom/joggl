@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "joggl",
-  "version": "1.0",
+  "version": "1.1.1",
   "description": "track time in jira using toggl and tempo",
   "icons": {
 	"128": "assets/images/joggl.png"
